@@ -1,0 +1,170 @@
+.new_book {
+    width: 700px;
+    height: auto;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    background-color: #18181a;
+    font-family: monospace;
+    color: white;
+    display: flex;
+
+    .new_book-subcontent {
+        width: 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .new_book-image {
+            width: 130px;
+            height: 200px;
+        }
+
+        .new_book-check_input {
+            width: 130px;
+            margin: 10px 0;
+            background-color: #18181a;
+            border: none;
+            border-bottom: 1px solid white;
+            color: white;
+        }
+
+        .new_book-check_btn {
+            width: 130px;
+            padding: 10px 0;
+            background-color: #18181a;
+            border: 3px ridge white;
+            font-size: 10px;
+            color: white;
+            cursor: pointer;
+        }
+    }
+
+    .new_book-content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        margin-right: 15px;
+
+        // Название книги
+        .new_book-title {
+            border: none;
+            background-color: #18181a;
+            font-size: 24px;
+            color: white;
+            font-family: monospace;
+
+            &::placeholder {
+                color: white;
+            }
+        }
+
+        // Цикл
+        .new_book-cycle {
+            .new_book-cycle-name {
+                margin-top: 10px;
+                border: none;
+                background-color: #18181a;
+                font-size: 12px;
+                color: white;
+                font-family: monospace;
+
+                &::placeholder {
+                    color: white;
+                }
+            }
+
+            .new_book-cycle-number {
+                width: 10px;
+                margin-top: 10px;
+                border: none;
+                background-color: #18181a;
+                text-align: center;
+                font-size: 12px;
+                color: white;
+                font-family: monospace;
+
+                &::placeholder {
+                    color: white;
+                }
+            }
+        }
+
+        // Автор
+        .new_book-author {
+            margin-top: 10px;
+            border: none;
+            background-color: #18181a;
+            font-size: 12px;
+            color: white;
+            font-family: monospace;
+
+            &::placeholder {
+                color: white;
+            }
+        }
+
+        // Описание
+        .new_book-discribe {
+            width: 535px;
+            height: 137px;
+            margin-top: 10px;
+            border: none;
+            outline: none;
+            background-color: #18181a;
+            font-size: 12px;
+            color: white;
+            font-family: monospace;
+            resize: none;
+
+            &::placeholder {
+                color: white;
+            }
+
+        }
+
+        .new_book-discribe::-webkit-scrollbar {
+            width: 3px;
+            background-color: purple;
+            border-radius: 3px;
+        }
+
+        .new_book-discribe::-webkit-scrollbar-thumb {
+            width: 3px;
+            background-color: rgb(255, 142, 255);
+            border-radius: 3px;
+        }
+
+        // меню
+        .new_book-menu {
+            margin-top: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+
+            .new_book-link {
+                width: 300px;
+                border: none;
+                background-color: #18181a;
+                font-size: 12px;
+                color: white;
+                font-family: monospace;
+
+                &::placeholder {
+                    color: white;
+                }
+            }
+
+            .new_book-btn {
+                background-color: #18181a;
+                font-family: monospace;
+                font-size: 10px;
+                width: 124px;
+                height: 30px;
+                outline: 3px ridge white;
+                color: white;
+                text-align: center;
+                line-height: 30px;
+            }
+        }
+    }
+}

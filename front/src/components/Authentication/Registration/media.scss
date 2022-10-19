@@ -1,0 +1,29 @@
+@media (max-width: 1000px) {
+    .registration{
+        width: 100% !important;
+        height: calc(100vh - 50px) !important;
+    }
+    .registration-content{
+        width: 100% !important;
+        height: calc(100vh - 50px) !important;
+    }
+    .registration-bonus{
+        display: none !important;
+    }
+    .registration-success{
+        width: 100% !important;
+        height: calc(100vh - 50px) !important;
+    }
+}
+@media (max-width: 768px) {
+    .registration-success-title{
+        font-size: 22px !important;
+        .registration-success-subtitle{
+            font-size: 14px !important;
+        }
+    }
+
+}
+@media (max-width: 320px) {
+
+}

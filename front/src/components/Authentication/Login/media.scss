@@ -1,0 +1,20 @@
+@media (max-width: 1000px) {
+    .login{
+        width: 100%;
+        height: calc(100vh - 50px);
+    }
+    .login-welcome{
+        height: calc(100vh - 50px) !important; 
+    }
+}
+@media (max-width: 768px) {
+    .login-content{
+        width: 100% !important;
+    }
+    .login-welcome{
+        display: none !important;
+    }
+}
+@media (max-width: 320px) {
+    
+}

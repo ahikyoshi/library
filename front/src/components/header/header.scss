@@ -1,0 +1,147 @@
+.header{
+    width: 100%;
+    background-color: #18181a;
+    color: white;
+    border-bottom: 1px solid purple;
+    font-family: monospace;
+    position: fixed;
+    top: 0;
+    // Контейнер контента
+    .header-container{
+        width: 1080px;
+        height: 75px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    // Логотип
+    .logotype{
+        display: flex;
+        align-items: center;
+        .logotype-icon{
+            width: 40px;
+        }
+        .logotype-title{
+            margin-left: 10px;
+            font-size: 17px;
+            .logotype-subtitle{
+                color: purple;
+            }
+        }
+    }
+    // Меню
+    .menu{
+        display: flex;
+        // авторизация/регистрация
+        .entry{
+            font-size: 15px;
+            cursor: pointer;
+        }
+        // Профиль пользователя
+        .user{
+            display: flex;
+            .btn-profile{
+                width: 30px;
+                height: 30px;
+                border-radius: 100%;
+                border: 1px solid silver;
+                background-size: cover;
+                background-position: center;
+                cursor: pointer;
+            }
+            .marks-icon{
+                margin-top: 1px;
+                margin-left: 20px;
+                transition: 0.2;
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+            }
+            .setting-btn{
+                margin-top: 3px;
+                margin-left: 20px;
+                transition: 0.2;
+                &:hover{
+                    cursor: pointer;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    .mobile-menu-icon{
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 23px;
+        display: none;
+    }
+    .mobile-menu{
+        width: 100%;
+        height: 100vh;
+        background: #1c1c1e;
+        position: fixed;
+        top: 0;
+        left: 0;
+        .mobile-items{
+            width: 100%;
+            height: 100vh;
+
+            .mobile-close{
+                width: 100%;
+                height: 40px;
+                background-color: #18181a;
+                line-height: 40px;
+                text-indent: 10px;
+                color: white;
+            }
+            .mobile-logo{
+                margin: 10px 0 10px 0;
+                color: white;
+                font-size: 16px;
+                text-indent: 30px;
+            }
+            .mobile-item{
+                width: 100%;
+                height: 40px;
+                border-bottom: 1px solid #38383a;
+                color: #ddd;
+                font-size: 16px;
+                text-indent: 30px;
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1080px) {
+    .header{
+        .header-container{
+            width: 100% !important;
+            height: 60px;
+            justify-content: center;
+            .logotype{
+                position: absolute;
+                left: 10px;
+            }
+            .entry{
+                top: 15px;
+                right: 10px;
+                position: fixed;
+                display: none;
+            }
+            .user{
+                display: none;
+            }
+            .mobile-menu-icon{
+                display: block;
+            }
+           
+        }
+    }
+}

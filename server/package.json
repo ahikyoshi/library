@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.18.1",
+    "express-json": "^1.0.0",
+    "nedb": "^1.8.0",
+    "nodemon": "^2.0.18"
+  },
+  "dependencies": {
+    "express-nedb-rest": "^1.4.1"
+  }
+}
